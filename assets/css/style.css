@@ -1,0 +1,333 @@
+* {
+	/*reset*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #212121;
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1 {
+  color: #E0B431;
+}
+
+
+/*Start of CSS*/
+
+/*landing page*/
+#jumbo-land {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../images/landing.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron hr {
+  background-color: #fff;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#land-btn {
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 18px;
+  width: 160px;
+  border-radius: 500px;
+  transition: all 0.2s ease-in-out;
+}
+
+#land-btn:hover {
+  background-color: white;
+}
+ #land-btn:hover a {
+  color: #FC9206;
+ }
+
+.jumbotron h1 {
+  color: #FC9206;
+}
+/*end landing page*/
+
+/*home page*/
+
+#nv-link {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin: 0 5px 0 5px;
+}
+
+#carousel-home {
+  height: 100vh;
+}
+
+#carousel-home img {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+/*end home page*/
+
+
+/*gallery page*/
+
+#jumbo-gallery {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../images/landing.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#gallery-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+#gallery-card {
+  background-color: #212121;
+  border: 2px solid #FFFFFF;
+}
+
+/*end gallery page*/
+
+
+/*contact page*/
+
+#contact-btn {
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+}
+
+
+/*end of contact page*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end of css decalarations*/
+
+
+/* custom media queries */
+
+/*Mobile Styles*/
+@media only screen and (max-width: 400px) {
+
+}
+
+/*Tablet Styles*/
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/*Desktop Styles*/
+
+@media only screen and (min-width: 961px) {
+
+}
+
+
+
+
+/*grid system*/
+
+/*large screen grid*/
+.col-lg-1 {
+  width: 8.33%; /* 100% / 12 */
+}
+
+.col-lg-2 {
+  width: 16.66%; /* 100% / 12 times 2 columns */
+}
+
+.col-lg-3 {
+  width: 25%; /* 100% / 12 times 3 */
+}
+
+.col-lg-4 {
+  width: 33.33%; /* 100% / 12 times 4 */
+}
+
+.col-lg-5 {
+  width: 41.66%; /*100% / 12 times 5*/
+}
+
+.col-lg-6 {
+  width: 50%; /*100% / 12 times 6*/
+}
+
+.col-lg-7 {
+  width: 58.33%; /*100% / 12 times 7*/
+}
+
+.col-lg-8 {
+  width: 66.66%; /*100% / 12 times 8*/
+}
+
+.col-lg-9 {
+  width: 75%; /*100% / 12 times 9*/
+}
+
+.col-lg-10 {
+  width: 83.33%; /*100% / 12 times 10*/
+}
+
+.col-lg-11 {
+  width: 91.66%; /*100% / 12 times 11*/
+}
+
+.col-lg-12 {
+  width: 100%; /*100% / 12 times 12*/
+}
+
+
+/* tablet view */
+@media only screen and (max-width: 768px) {
+  .col-md-1 {
+    width: 8.33%; 
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+  width: 25%; /* 100% / 12 times 3 */
+  }
+
+  .col-md-4 {
+    width: 33.33%; /* 100% / 12 times 4 */
+  }
+
+  .col-md-5 {
+    width: 41.66%; /*100% / 12 times 5*/
+  }
+
+  .col-md-6 {
+    width: 50%; /*100% / 12 times 6*/
+  }
+
+  .col-md-7 {
+    width: 58.33%; /*100% / 12 times 7*/
+  }
+
+  .col-md-8 {
+    width: 66.66%; /*100% / 12 times 8*/
+  }
+
+  .col-md-9 {
+    width: 75%; /*100% / 12 times 9*/
+  }
+
+  .col-md-10 {
+    width: 83.33%; /*100% / 12 times 10*/
+  }
+
+  .col-md-11 {
+    width: 91.66%; /*100% / 12 times 11*/
+  }
+
+  .col-md-12 {
+    width: 100%; /*100% / 12 times 12*/
+  }
+
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 450px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+  width: 25%; /* 100% / 12 times 3 */
+  }
+
+  .col-4 {
+    width: 33.33%; /* 100% / 12 times 4 */
+  }
+
+  .col-5 {
+    width: 41.66%; /*100% / 12 times 5*/
+  }
+
+  .col-6 {
+    width: 50%; /*100% / 12 times 6*/
+  }
+
+  .col-7 {
+    width: 58.33%; /*100% / 12 times 7*/
+  }
+
+  .col-8 {
+    width: 66.66%; /*100% / 12 times 8*/
+  }
+
+  .col-9 {
+    width: 75%; /*100% / 12 times 9*/
+  }
+
+  .col-10 {
+    width: 83.33%; /*100% / 12 times 10*/
+  }
+
+  .col-11 {
+    width: 91.66%; /*100% / 12 times 11*/
+  }
+
+  .col-12 {
+    width: 100%; /*100% / 12 times 12*/
+  }
+
+}
