@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto" rel="stylesheet">
 
 	<!-- fav icon -->
 	<link rel="icon" type="image/gif/png" href="assets/images/icon.png">
@@ -30,7 +30,7 @@
 <body>
 
 	<div class="container-fluid">
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top">
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 			<a class="navbar-brand" href="home.html"> 
 				Photography 
 			</a>
@@ -50,7 +50,7 @@
 					</li>
 
 					<li class="nav-item">
-						<a id="nv-link" class="nav-link" href="equipments.html"> Equipments </a>
+						<a id="nv-link" class="nav-link" href="equipment.html"> Equipments </a>
 					</li>
 
 					<li class="nav-item active">
@@ -68,7 +68,11 @@
 		<!-- Start of FAQs -->
 
 	    <div id=faqs-row class="row">
-	        <div class="col-lg-4 col-md-4 col-6">
+	    	<header class="col-12 col-md-12 col-lg-12">
+				<h1 class="text-center py-3"> FAQ's & Summary </h1>
+			</header>
+
+	    	<div class="col-lg-4 col-md-4 col-6">
 	            <div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
 	                <a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
 	                    <i class="mdi mdi-help-circle"></i> Frequently Asked Questions
@@ -82,76 +86,76 @@
 	            <div class="tab-content" id="faq-tab-content">
 	                <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
 	                    <div class="accordion" id="accordion-tab-1">
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-1">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">1. What does manual mode mean and do I have to learn it?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">1. What does manual mode mean and do I have to learn it?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>Manual mode puts the photographer in complete control of how the photo will turn out. You have to manually set both the aperture, ISO, and the shutter speed. You can take this a few steps further and control the white balance, too. The camera will not make any automatic changes to the exposure. Your camera will still guide you to the best exposure with its built-in meter.</p>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-2">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">2. How do you achieve sharp focus??</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">2. How do you achieve sharp focus??</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>Focus can be one of the most frustrating elements of photography when you are first starting out. Nailing focus could be an entire article in and of itself, but I wanted to touch on this very common beginner question.</p>
 	                                    <p>There are many factors that go into getting a sharp image, but there are two focusing methods that help you to stay in control of focus rather than relying on the cameras autofocus function. Chances are most professional photographers are using one of these methods and that is why their images are sharp.</p>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-3">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">3. Do you really have to edit all your photos?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">3. Do you really have to edit all your photos?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>In a word, yes. While it is best to nail an image in camera, editing is how it all comes together to become a finished image. Some photographers are more artistic with their editing and some are cleaner. This is really just a personal preference and will come with time.</p>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-4">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">4. What gear do I need to achieve great photos?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">4. What gear do I need to achieve great photos?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>The gear you have in your bag is a personal preference and really depends on what type of photography you are interested in. It is recommended to start your journey with the “nifty 50,” AKA a 50mm prime lens.</p>
 	                                    <p>All major manufacturers have great 50mm options and this really is a fantastic starter lens. After you have explored with the 50mm lens, you can try your hand at wider angle and telephoto focal lengths. If zoom is appealing to you, there are plenty of zoom lenses out there, however you will hear many professional photographers who swear by prime lenses (lenses that do not zoom).</p>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-5">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-5" aria-expanded="false" aria-controls="accordion-tab-1-content-5">5. Do I have to be in business to be called a pro?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-5" aria-expanded="false" aria-controls="accordion-tab-1-content-5">5. Do I have to be in business to be called a pro?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-1-content-5" aria-labelledby="accordion-tab-1-heading-5" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>No! There are many, and I mean MANY photographers who are not in business and they are incredible! You absolutely do not need to be in business to be respected or taken seriously.</p>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-6">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-6" aria-expanded="false" aria-controls="accordion-tab-1-content-6">6. What is white balance?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-6" aria-expanded="false" aria-controls="accordion-tab-1-content-6">6. What is white balance?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-1-content-6" aria-labelledby="accordion-tab-1-heading-6" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>Again, a whole article could be written on this question alone so I will try and keep this answer brief. Do you ever wonder why sometimes your subject looks bright yellow or orange, or why sometimes they look grey or blue? This is because your white balance is off.</p>
 	                                    <p>To define this very simply, in reference to digital photography, white balance means that the colors in your image are true to life. White balance is measured by numbers, lower being cooler and higher being warmer. Here is a great diagram that explains white balance.</p>
 	                                    <p>White balance is a lot more than an exact science of numbers as it can also be a matter of preference. There are many ways to control white balance. You can set a custom white balance, trust your camera and put your camera on auto white balance, or directly set your Kelvin temperature.</p>
@@ -159,28 +163,28 @@
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-7">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-7" aria-expanded="false" aria-controls="accordion-tab-1-content-7">7. What is the difference between JPG and RAW?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-7" aria-expanded="false" aria-controls="accordion-tab-1-content-7">7. What is the difference between JPG and RAW?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-1-content-7" aria-labelledby="accordion-tab-1-heading-7" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>JPG is the most common file format for digital photographs. Your camera can be set to shoot and store the images you make in varying sizes of JPG. The thing with JPG is that a lot of detail is lost when the image is shot this way.</p>
 	                                    <p>When a JPG image is taken, the camera does some automatic processing which varies with make and model of camera. When you go to edit an image shot in JPG you do not have as much data to work with, and it can be hard to recover improperly exposed parts of photos. It also gives you less control in post processing in the way of color.</p>
 	                                    <p>RAW files are uncompressed and unprocessed shots of all of the detail available to the camera sensor. RAW files are completely unedited and need to be post processed.</p>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-8">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-8" aria-expanded="false" aria-controls="accordion-tab-1-content-8">8. How do I know when it is okay to go into business?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-8" aria-expanded="false" aria-controls="accordion-tab-1-content-8">8. How do I know when it is okay to go into business?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-1-content-8" aria-labelledby="accordion-tab-1-heading-8" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>Take your time! But I know it can be very exciting and hard to wait. If you are thinking about going into business ask yourself these questions:</p>
 	                                    <p> Are my images consistently properly exposed, properly focused, and well composed?</p>
 	                                    <p>Am I ready for hard deadlines and to act like a professional?</p>	
@@ -188,27 +192,27 @@
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-9">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-9" aria-expanded="false" aria-controls="accordion-tab-1-content-9">9. How do I learn how to pose people?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-9" aria-expanded="false" aria-controls="accordion-tab-1-content-9">9. How do I learn how to pose people?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-1-content-9" aria-labelledby="accordion-tab-1-heading-9" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>Posing and directing is an art form, and it takes lots of practice and confidence. I recommend shooting as many people as you can as often as you can.</p>
 	                                    <p>I also recommend thinking long and hard about your vision. What do you want your images to say? Plan ahead, and then you can guide and direct in such a way to execute your vision. Do you want your images more posed or do you want them to appear more candid? You have to know what you want to achieve before you begin posing and directing.</p>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-1-heading-10">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-10" aria-expanded="false" aria-controls="accordion-tab-1-content-10">10. How do you find balance with life and photography?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-10" aria-expanded="false" aria-controls="accordion-tab-1-content-10">10. How do you find balance with life and photography?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-1-content-10" aria-labelledby="accordion-tab-1-heading-10" data-parent="#accordion-tab-1">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>Whether you are in business or a hobbyist, photography has a way of running our lives. This is because we feel so passionate about it.</p>
 	                                    <p>Making a schedule and sticking to it is very important. If you have shoots to edit (personal or commissioned), pick a time each day to dedicate to editing and stick to it. If you like to blog, pick a day of the week that you will carve out time to blog. I am a big fan of the old-fashioned paper planners and I chart out my entire week there.</p>
 	                                </div>
@@ -219,28 +223,28 @@
 
 	                <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2">
 	                    <div class="accordion" id="accordion-tab-2">
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-2-heading-1">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">What is Photography?</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">What is Photography?</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p><strong>Photography</strong> is the art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material.</p>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-2-heading-2">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">Sample of types of of photography</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">Sample types of photography</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-2-content-2" aria-labelledby="accordion-tab-2-heading-2" data-parent="#accordion-tab-2">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>
-	                                    	<ul>
+	                                    	<ul class="p-3">
 	                                    		<li>Black & White Photography</li>
 	                                    		<li>Aerial Photography</li>
 	                                    		<li>Food Photography</li>
@@ -252,16 +256,16 @@
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="card">
+	                        <div id=faqs-card class="card">
 	                            <div class="card-header" id="accordion-tab-2-heading-3">
 	                                <h5>
-	                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">Beginners Photography Equipment</button>
+	                                    <button id="faqs-btn" class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">Beginners Photography Equipment</button>
 	                                </h5>
 	                            </div>
 	                            <div class="collapse" id="accordion-tab-2-content-3" aria-labelledby="accordion-tab-2-heading-3" data-parent="#accordion-tab-2">
-	                                <div class="card-body">
+	                                <div class="card-body text-justify">
 	                                    <p>
-	                                    	<ul>
+	                                    	<ul class="p-3">
 	                                    		<li>Camera</li>
 	                                    		<li>Lenses</li>
 	                                    		<li>Tripod</li>
