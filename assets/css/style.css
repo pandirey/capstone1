@@ -114,7 +114,7 @@ h1 {
 
 #jumbo-gallery {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   border-radius: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../images/gallery.jpg");
   background-size: cover;
@@ -137,6 +137,18 @@ h1 {
   background-color: #212121;
   border: 2px solid #FFFFFF;
 }
+
+a h3 {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+a h3:hover {
+  color: #E0B431;
+  text-decoration: none;
+}
+
+
 
 /*end gallery page*/
 
@@ -178,6 +190,7 @@ h1 {
         border-radius: 0;
         color: #616161;
         transition: background-color .2s ease;
+
         
         &:hover {
             background-color: #f6f6f6;
@@ -203,7 +216,7 @@ h1 {
     }
 }
 
- /*TAB CONTENT*/
+ TAB CONTENT
 .tab-content {
     box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
     
@@ -233,7 +246,7 @@ h1 {
                 &:focus,
                 &:active,
                 &:hover:active {
-                    text-decoration: none;
+                text-decoration: none;
                 }
             }
         }
@@ -251,7 +264,7 @@ h1 {
 }
 
 
-/*BORDER FIX*/
+BORDER FIX
 .accordion {
     > .card {
         &:not(:first-child) {
@@ -287,8 +300,8 @@ h1 {
   color: rgba(0,0,0,.87);
   text-align: left;
   white-space: normal;
+  color: red;
 }
-
 
 /*.card-body p {
 
@@ -306,11 +319,31 @@ h1 {
   margin: 20px 0 20px 0;
 }
 
-
-
 /*end of equipment page*/
 
 
+/*Aerial Gallery*/
+#gallery-gall {
+  margin-left: 70px;
+}
+
+#gallery-gall img {
+  width: 230px;
+  height: 200px;
+  padding: 5px;
+  filter: grayscale(0%);
+  transition: 1s;
+  background-position: center;
+}
+
+#gallery-gall img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+
+
+/*End of Aerial Gallery*/
 
 
 
