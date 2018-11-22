@@ -14,6 +14,9 @@
 	<!-- animate css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
+	<!-- lightbox jquery css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/lightbox.min.css">
+
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -31,7 +34,7 @@
 
 	<div class="container-fluid">
 		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-			<a class="navbar-brand" href="home.html"> 
+			<a id="pandi" class="navbar-brand" href="home.html"> 
 				Photography 
 			</a>
 
@@ -79,8 +82,10 @@
 					<p> The D7000 is better than an entry-level DSLR because it gives you room to grow. Although it has the same sensor as some cheaper cameras, it gives you so many more features (including extra dials that make it easier to change settings once you learn about your camera) that make it indispensable. </p>
 					<p><em> Total: $400 for the D7000 </em></p>
 				</div> 
-				<div class="col-md-3 col-12 order-12">	
-					<img class="img-fluid" src="assets/images/equipment/camera.jpg">
+				<div class="col-md-3 col-12 order-12">
+					<a href="assets/images/equipment/camera.jpeg" data-lightbox="mygallery" data-title="Camera">	
+						<img class="img-fluid" src="assets/images/equipment/camera.jpeg">
+					</a>
 				</div>
 			</div>
 
@@ -97,7 +102,9 @@
 					<p><em> Total: $720 or $800, depending upon the lenses you choose </em></p>
 				</div> 
 				<div class="col-md-3 col-12 order-1">
-					<img class="img-fluid" src="assets/images/equipment/lense.jpg">
+					<a href="assets/images/equipment/lense.jpeg" data-lightbox="mygallery" data-title="Lense">
+						<img class="img-fluid" src="assets/images/equipment/lense.jpeg">
+					</a>
 				</div> 
 			</div>
 		
@@ -110,7 +117,9 @@
 					<p><em> Total: $260 </em></p>
 				</div>
 				<div class="col-md-3 col-12 order-12">
-					<img class="img-fluid" src="assets/images/equipment/tripod.jpg">
+					<a href="assets/images/equipment/tripod.jpeg" data-lightbox="mygallery" data-title="Tripod">
+						<img class="img-fluid" src="assets/images/equipment/tripod.jpeg">
+					</a>	
 				</div>
 			</div>
 
@@ -123,7 +132,9 @@
 					<p><em> Total: $140, but $100 when you bundle Lightroom with a lens. </em></p>
 				</div>
 				<div class="col-md-3 col-12 order-1">
-					<img class="img-fluid" src="assets/images/equipment/software.png">
+					<a href="assets/images/equipment/software.png" data-lightbox="mygallery" data-title="Software (editing)">
+						<img class="img-fluid" src="assets/images/equipment/software.png">
+					</a>	
 				</div>	
 			</div>
 
@@ -136,7 +147,9 @@
 					<p><em> Total: $220 </em></p>
 				</div>
 				<div class="col-md-3 col-12 order-12">
-					<img class="img-fluid" src="assets/images/equipment/Monitor.jpg">
+					<a href="assets/images/equipment/Monitor.jpeg" data-lightbox="mygallery" data-title="Monitor">
+						<img class="img-fluid" src="assets/images/equipment/Monitor.jpeg">
+					</a>
 				</div>
 			</div>
 			
@@ -148,7 +161,9 @@
 					<p><em> Total: $105 </em></p>
 				</div>
 				<div class="col-md-3 col-12 order-1">
-					<img class="img-fluid" src="assets/images/equipment/lighting.jpg">
+					<a href="assets/images/equipment/lighting.jpeg" data-lightbox="mygallery" data-title="Lighting">
+						<img class="img-fluid" src="assets/images/equipment/lighting.jpeg">
+					</a>	
 				</div>	
 			</div>
 
@@ -163,7 +178,9 @@
 					<p><em> Total: $60 if you bought the Sigma 18-35mm f/1.8, a bit over $90 if you bought the Nikon 35mm f/1.8 and Sigma 17-50mm f/2.8 OS. </em></p>
 				</div>
 				<div class="col-md-3 col-12 order-12">
-					<img class="img-fluid" src="assets/images/equipment/filter.jpg">
+					<a href="assets/images/equipment/filter.jpeg" data-lightbox="mygallery" data-title="Filter">
+						<img class="img-fluid" src="assets/images/equipment/filter.jpeg">
+					</a>	
 				</div>
 			</div>
 
@@ -178,7 +195,9 @@
 					<p><em> Total: $190 or less </em></p>
 				</div>
 				<div class="col-md-3 col-12 order-1">
-					<img class="img-fluid" src="assets/images/equipment/extra.jpg">
+					<a href="assets/images/equipment/extra.jpeg" data-lightbox="mygallery" data-title="Extra">
+						<img class="img-fluid" src="assets/images/equipment/extra.jpeg">
+					</a>	
 				</div>	
 			</div>
 
@@ -188,7 +207,30 @@
 
 
 		<footer class="footer bg-dark">
-			<p class="text-center mb-0 p-3">Rey Philip Pandi | Tuitt Coding Bootcamp </p>
+			<div class="row">
+				<div class="col-12 col-md-4 offset-md-3">
+					<p class="text-center mb-0 p-3">Rey Philip Pandi | Tuitt Coding Bootcamp | 2018 </p>
+				</div>
+
+				<div class="col-8 col-md-3 text-right">
+					<div class="contact">
+						<a href="https://github.com/pandirey" target="_blank">
+							<img class="img-fluid" src="assets/images/github-white.png" alt="social-github">
+						</a>
+
+						<a href="https://gitlab.com/pandirey" target="_blank">
+							<img class="img-fluid" src="assets/images/gitlab.png" alt="social-gitlab">
+						</a>
+						<a href="mailto:pandi.reyphilip@gmail.com" target="_blank">
+							<img class="img-fluid" src="assets/images/gmail.png" alt="social-gmail">
+						</a>
+
+						<a href="https://www.facebook.com" target="_blank">
+							<img class="img-fluid" src="assets/images/fb.png" alt="social-facebook">
+						</a>
+					</div>
+				</div>
+			</div>
 		</footer>	
 
 
@@ -216,6 +258,8 @@
 
 
 	<!-- Optional JavaScript -->
+	<script type="text/javascript" src="assets/js/lightbox-plus-jquery.min.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
 

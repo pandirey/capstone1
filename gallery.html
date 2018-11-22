@@ -14,6 +14,9 @@
 	<!-- animate css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
+	<!-- lightbox jquery css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/lightbox.min.css">
+
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -31,7 +34,7 @@
 
 	<div class="container-fluid">
 		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-			<a class="navbar-brand" href="home.html"> 
+			<a id="pandi" class="navbar-brand" href="home.html"> 
 				Photography 
 			</a>
 
@@ -65,7 +68,6 @@
 		</nav> <!-- end of nav -->
 
 		<section id="jumbotron-section">
-			
 			<div id="jumbo-gallery" class="jumbotron mb-0 text-center">
 				<div class="container">
 					<h1 class="text-center">Different Types of Photography</h1>
@@ -74,109 +76,254 @@
 					
 				</div> <!-- end of container -->
 			</div>
-			
 		</section> <!-- end of jumbotron-section -->
 
-
-		<div id="card-container" class="container">
-			<div class="row">
-
-				<div id=gallery-row class="col-12 col-md-4 col-lg-4">
-					<div id=gallery-card class="card">
-
-						<a href="blacknwhite.html">
-							<img class="card-img-top img-fluid" src="assets/images/landing.jpg">
-						</a>
-						<div class="card-body">
-							<a href="blacknwhite.html"><h3 class="card-title text-center">Black & White Photography</h3></a>
-							<p class="card-text text-justify">Modern black and white pictures keep photography’s oldest tradition alive. Now, shooting with this limited palette is a stylistic choice rather than a necessity, and image makers use it as a way to add timeless drama to their compositions. When shooting a photograph in black and white, it’s most important to remember contrast; the shadows will look more defined, and your extreme tones will appear crisp and clean. As a result, your image will pop. For more insight on capturing bold and beautiful shadows.</p>
-						</div>
-						
-					</div> <!-- end of card -->
-				</div> <!-- end of 4 cols -->
-
-				<div id=gallery-row class="col-12 col-md-4 col-lg-4">
-					<div id=gallery-card class="card">
-
-						<a href="aerial.html">
-							<img class="card-img-top img-fluid" src="assets/images/landing.jpg">
-						</a>
-						<div class="card-body">
-							<a href="aerial.html"><h3 class="card-title text-center">Aerial Photography</h3></a>
-							<p class="card-text text-justify">Ever since photography was invented in 1839, people have been trying to capture the Earth from above. Aerial photography has a long and rich history, which started in 1858 when photographer Gaspard-Félix Tournachon tethered a camera to a balloon. Since then, it’s only gotten better thanks to the advent of drones. Photographer Andy Yeung tells us, “What I like most about working with drones is that we can see things we normally don’t have access to. Plus, drones add a layer between traditional aerial pictures and ground pictures, making the creative process more interesting.” If you’d like to get started with aerial photography, learn how 10 amazing photographers capture the world from above.</p>
-						</div>
-
-					</div> <!-- end of card -->
-				</div> <!-- end of 4 cols -->
-
-				<div id=gallery-row class="col-12 col-md-4 col-lg-4">
-					<div id=gallery-card class="card">
-
-						<a href="food.html">
-							<img class="card-img-top img-fluid" src="assets/images/landing.jpg">
-						</a>
-						<div class="card-body">
-							<a href="food.html"><h3 class="card-title text-center">Food Photography</h3></a>
-							<p class="card-text text-justify">One of the biggest trends in social media—still—is taking pictures of your food. Professional chefs and amateurs alike can make our mouths water with one appetizing image. To ensure that the dish will look delicious, there are a few tips to remember: make sure your food is well lit (try photographing in natural light); pay attention to your props; and shoot quickly—food doesn’t last forever before it melts or collapses!</p>
-						</div>
-
-					</div> <!-- end of card -->
-				</div> <!-- end of 4 cols -->
-
-				<div id=gallery-row class="col-12 col-md-4 col-lg-4">
-					<div id=gallery-card class="card">
-
-						<a href="landscape.html">
-							<img class="card-img-top img-fluid" src="assets/images/landing.jpg">
-						</a>
-						<div class="card-body">
-							<a href="landscape.html"><h3 class="card-title text-center">Natural Landscape Photography</h3></a>
-							<p class="card-text text-justify">When photography was first invented, some of the earliest images were of the outdoors. So, it’s no surprise that natural landscapes remain a popular type of photography—there’s so much beauty out there! One subject that image makers are continually drawn to are mountains...</p>
-						</div>
-
-					</div> <!-- end of card -->
-				</div> <!-- end of 4 cols -->
-
-				<div id=gallery-row class="col-12 col-md-4 col-lg-4">
-					<div id=gallery-card class="card">
-
-						<a href="macro.html">
-							<img class="card-img-top img-fluid" src="assets/images/landing.jpg">
-						</a>
-						<div class="card-body">
-							<a href="macro.html"><h3 class="card-title text-center">Macro Photography</h3></a>
-							<p class="card-text text-justify">Macro photography makes things that are small appear larger than life. It’s got a broad range of applications, but one of our favorites is in photographing tiny bugs and plants. Exotic insects have their amazing colors and characteristics magnified, and as a result, we see all of the details that we would normally miss. You can take your own macro photos as long as you have a special lens. Tamron makes some of the top lenses for Nikon and Canon. But, if you don’t want to outfit your DSLR, there are plenty of inexpensive macro attachments for your smartphone, too.</p>
-						</div>
-
-					</div> <!-- end of card -->
-				</div> <!-- end of 4 cols -->
-
-				<div id=gallery-row class="col-12 col-md-4 col-lg-4">
-					<div id=gallery-card class="card">
-
-						<a href="wildlife.html">
-							<img class="card-img-top img-fluid" src="assets/images/landing.jpg">
-						</a>
-						<div class="card-body">
-							<a href="wildlife.html"><h3 class="card-title text-center">Wildlife Photography</h3></a>
-							<p class="card-text text-justify">Wildlife photography is a genre of photography concerned with documenting various forms of wildlife in their natural habitat. As well as requiring photography skills, wildlife photographers may need field craft skills. For example, some animals are difficult to approach and thus a knowledge of the animal's behavior is needed in order to be able to predict its actions. Photographing some species may require stalking skills or the use of a hide/blind for concealment.</p>
-						</div>
-
-					</div> <!-- end of card -->
-				</div> <!-- end of 4 cols -->
-
-			</div> <!-- end of row -->
-		</div>
+			<header class="col-12 col-md-12 col-lg-12">
+				<h1 id="aerial-gall" class="text-center py-3">Aerial Photography </h1>
+			</header>
+			<div id="gallery-gall" class="gallery">
+				<a href="assets/images/aerial/aerial1.jpeg" data-lightbox="mygallery" data-title="Sample 1 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial1-small.jpeg">
+				</a>
+				<a href="assets/images/aerial/aerial2.jpeg" data-lightbox="mygallery" data-title="Sample 2 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial2-small.jpeg">
+				</a>
+				<a href="assets/images/aerial/aerial3.jpeg" data-lightbox="mygallery" data-title="Sample 3 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial3-small.jpeg">
+				</a>
+				<a href="assets/images/aerial/aerial4.jpeg" data-lightbox="mygallery" data-title="Sample 4 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial4-small.jpeg">
+				</a>
+				<a href="assets/images/aerial/aerial5.jpeg" data-lightbox="mygallery" data-title="Sample 5 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial5-small.jpeg">
+				</a>
+				<a href="assets/images/aerial/aerial6.jpeg" data-lightbox="mygallery" data-title="Sample 6 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial6-small.jpeg">
+				</a>
+				<a href="assets/images/aerial/aerial7.jpeg" data-lightbox="mygallery" data-title="Sample 7 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial7-small.jpeg">
+				</a>
+				<a href="assets/images/aerial/aerial8.jpeg" data-lightbox="mygallery" data-title="Sample 8 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial8-small.jpeg">
+				</a>
+				<a href="assets/images/aerial/aerial9.jpeg" data-lightbox="mygallery" data-title="Sample 9 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial9-small.jpeg">
+				</a>
+				<a href="assets/images/aerial/aerial10.jpeg" data-lightbox="mygallery" data-title="Sample 10 of Aerial Photography">
+					<img class="img-fluid" src="assets/images/aerial/aerial10-small.jpeg">
+				</a>				
+			</div> <!-- end of aerial gallery -->
 
 
+			<header class="col-12 col-md-12 col-lg-12">
+				<h1 id="bnw-gall" class="text-center py-3">Black & White Photography </h1>
+			</header>
+			<div id="gallery-gall" class="gallery">
+				<a href="assets/images/bnw/bnw1.jpeg" data-lightbox="mygallery" data-title="Sample 1 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw1-small.jpeg">
+				</a>
+				<a href="assets/images/bnw/bnw2.jpeg" data-lightbox="mygallery" data-title="Sample 2 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw2-small.jpeg">
+				</a>
+				<a href="assets/images/bnw/bnw3.jpeg" data-lightbox="mygallery" data-title="Sample 3 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw3-small.jpeg">
+				</a>
+				<a href="assets/images/bnw/bnw4.jpeg" data-lightbox="mygallery" data-title="Sample 4 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw4-small.jpeg">
+				</a>
+				<a href="assets/images/bnw/bnw5.jpeg" data-lightbox="mygallery" data-title="Sample 5 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw5-small.jpeg">
+				</a>
+				<a href="assets/images/bnw/bnw6.jpeg" data-lightbox="mygallery" data-title="Sample 6 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw6-small.jpeg">
+				</a>
+				<a href="assets/images/bnw/bnw7.jpeg" data-lightbox="mygallery" data-title="Sample 7 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw7-small.jpeg">
+				</a>
+				<a href="assets/images/bnw/bnw8.jpeg" data-lightbox="mygallery" data-title="Sample 8 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw8-small.jpeg">
+				</a>
+				<a href="assets/images/bnw/bnw9.jpeg" data-lightbox="mygallery" data-title="Sample 9 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw9-small.jpeg">
+				</a>
+				<a href="assets/images/bnw/bnw10.jpeg" data-lightbox="mygallery" data-title="Sample 10 of Black & White Photography">
+					<img class="img-fluid" src="assets/images/bnw/bnw10-small.jpeg">
+				</a>				
+			</div> <!-- end of black & white gallery -->
+		
+
+			<header class="col-12 col-md-12 col-lg-12">
+				<h1 id="food-gall" class="text-center py-3">Food Photography </h1>
+			</header>
+			<div id="gallery-gall" class="gallery">
+				<a href="assets/images/food/food1.jpeg" data-lightbox="mygallery" data-title="Sample 1 of Food Photography">
+					<img class="img-fluid" src="assets/images/food/food1-small.jpeg">
+				</a>
+				<a href="assets/images/food/food2.jpeg" data-lightbox="mygallery" data-title="Sample 2 of Food Photography">
+					<img class="img-fluid" src="assets/images/food/food2-small.jpeg">
+				</a>
+				<a href="assets/images/food/food3.jpeg" data-lightbox="mygallery" data-title="Sample 3 of Food Photography">
+					<img class="img-fluid" src="assets/images/food/food3-small.jpeg">
+				</a>
+				<a href="assets/images/food/food4.jpeg" data-lightbox="mygallery" data-title="Sample 4 of Food Photography">
+					<img class="img-fluid" src="assets/images/food/food4-small.jpeg">
+				</a>
+				<a href="assets/images/food/food5.jpeg" data-lightbox="mygallery" data-title="Sample 5 of Food Photography">
+					<img class="img-fluid" src="assets/images/food/food5-small.jpeg">
+				</a>
+				<a href="assets/images/food/food6.jpeg" data-lightbox="mygallery" data-title="Sample 6 of Food Photography">
+					<img class="img-fluid" src="assets/images/food/food6-small.jpeg">
+				</a>
+				<a href="assets/images/food/food7.jpeg" data-lightbox="mygallery" data-title="Sample 7 of Food Photography">
+					<img class="img-fluid" src="assets/images/food/food7-small.jpeg">
+				</a>
+				<a href="assets/images/food/food8.jpeg" data-lightbox="mygallery" data-title="Sample 8 of Food Photography">
+					<img class="img-fluid" src="assets/images/food/food8-small.jpeg">
+				</a>
+				<a href="assets/images/food/food9.jpeg" data-lightbox="mygallery" data-title="Sample 9 of Food Photography">
+					<img class="img-fluid" src="assets/images/food/food9-small.jpeg">
+				</a>
+				<a href="assets/images/food/food10.jpeg" data-lightbox="mygallery" data-title="Sample 10 Food Photography">
+					<img class="img-fluid" src="assets/images/food/food10-small.jpeg">
+				</a>				
+			</div> <!-- end of food gallery -->
 
 
+			<header class="col-12 col-md-12 col-lg-12">
+				<h1 id="landscape-gall" class="text-center py-3">Natural Landscape Photography </h1>
+			</header>
+			<div id="gallery-gall" class="gallery">
+				<a href="assets/images/landscape/landscape1.jpeg" data-lightbox="mygallery" data-title="Sample 1 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape1-small.jpeg">
+				</a>
+				<a href="assets/images/landscape/landscape2.jpeg" data-lightbox="mygallery" data-title="Sample 2 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape2-small.jpeg">
+				</a>
+				<a href="assets/images/landscape/landscape3.jpeg" data-lightbox="mygallery" data-title="Sample 3 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape3-small.jpeg">
+				</a>
+				<a href="assets/images/landscape/landscape4.jpeg" data-lightbox="mygallery" data-title="Sample 4 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape4-small.jpeg">
+				</a>
+				<a href="assets/images/landscape/landscape5.jpeg" data-lightbox="mygallery" data-title="Sample 5 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape5-small.jpeg">
+				</a>
+				<a href="assets/images/landscape/landscape6.jpeg" data-lightbox="mygallery" data-title="Sample 6 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape6-small.jpeg">
+				</a>
+				<a href="assets/images/landscape/landscape7.jpeg" data-lightbox="mygallery" data-title="Sample 7 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape7-small.jpeg">
+				</a>
+				<a href="assets/images/landscape/landscape8.jpeg" data-lightbox="mygallery" data-title="Sample 8 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape8-small.jpeg">
+				</a>
+				<a href="assets/images/landscape/landscape9.jpeg" data-lightbox="mygallery" data-title="Sample 9 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape9-small.jpeg">
+				</a>
+				<a href="assets/images/landscape/landscape10.jpeg" data-lightbox="mygallery" data-title="Sample 10 of Natural Landscape Photography">
+					<img class="img-fluid" src="assets/images/landscape/landscape10-small.jpeg">
+				</a>				
+			</div> <!-- end of landscape gallery -->
 
 
+			<header class="col-12 col-md-12 col-lg-12">
+				<h1 id="macro-gall" class="text-center py-3">Macro Photography </h1>
+			</header>
+			<div id="gallery-gall" class="gallery">
+				<a href="assets/images/macro/macro1.jpeg" data-lightbox="mygallery" data-title="Sample 1 of Macro Photography">
+					<img class="img-fluid" src="assets/images/macro/macro1-small.jpeg">
+				</a>
+				<a href="assets/images/macro/macro2.jpeg" data-lightbox="mygallery" data-title="Sample 2 of Macro Photography">
+					<img class="img-fluid" src="assets/images/macro/macro2-small.jpeg">
+				</a>
+				<a href="assets/images/macro/macro3.jpeg" data-lightbox="mygallery" data-title="Sample 3 of Macro Photography">
+					<img class="img-fluid" src="assets/images/macro/macro3-small.jpeg">
+				</a>
+				<a href="assets/images/macro/macro4.jpeg" data-lightbox="mygallery" data-title="Sample 4 of Macro Photography">
+					<img class="img-fluid" src="assets/images/macro/macro4-small.jpeg">
+				</a>
+				<a href="assets/images/macro/macro5.jpeg" data-lightbox="mygallery" data-title="Sample 5 of Macro Photography">
+					<img class="img-fluid" src="assets/images/macro/macro5-small.jpeg">
+				</a>
+				<a href="assets/images/macro/macro6.jpeg" data-lightbox="mygallery" data-title="Sample 6 of Macro Photography">
+					<img class="img-fluid" src="assets/images/macro/macro6-small.jpeg">
+				</a>
+				<a href="assets/images/macro/macro7.jpeg" data-lightbox="mygallery" data-title="Sample 7 of Macro Photography">
+					<img class="img-fluid" src="assets/images/macro/macro7-small.jpeg">
+				</a>
+				<a href="assets/images/macro/macro8.jpeg" data-lightbox="mygallery" data-title="Sample 8 of Macro Photography">
+					<img class="img-fluid" src="assets/images/macro/macro8-small.jpeg">
+				</a>
+				<a href="assets/images/macro/macro9.jpeg" data-lightbox="mygallery" data-title="Sample 9 of Macro Photography">
+					<img class="img-fluid" src="assets/images/macro/macro9-small.jpeg">
+				</a>
+				<a href="assets/images/macro/macro10.jpeg" data-lightbox="mygallery" data-title="Sample 10 ofMacroe Photography">
+					<img class="img-fluid" src="assets/images/macro/macro10-small.jpeg">
+				</a>				
+			</div> <!-- end of macro gallery -->
 
+
+			<header class="col-12 col-md-12 col-lg-12">
+				<h1 id="wildlife-gall" class="text-center py-3">Wildlife Photography </h1>
+			</header>
+			<div id="gallery-gall" class="gallery">
+				<a href="assets/images/wildlife/wildlife1.jpeg" data-lightbox="mygallery" data-title="Sample 1 of Wildlife Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife1-small.jpeg">
+				</a>
+				<a href="assets/images/wildlife/wildlife2.jpeg" data-lightbox="mygallery" data-title="Sample 2 of Wildlife Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife2-small.jpeg">
+				</a>
+				<a href="assets/images/wildlife/wildlife3.jpeg" data-lightbox="mygallery" data-title="Sample 3 of Wildlife Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife3-small.jpeg">
+				</a>
+				<a href="assets/images/wildlife/wildlife4.jpeg" data-lightbox="mygallery" data-title="Sample 4 of Wildlife Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife4-small.jpeg">
+				</a>
+				<a href="assets/images/wildlife/wildlife5.jpeg" data-lightbox="mygallery" data-title="Sample 5 of Wildlife Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife5-small.jpeg">
+				</a>
+				<a href="assets/images/wildlife/wildlife6.jpeg" data-lightbox="mygallery" data-title="Sample 6 of Wildlife Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife6-small.jpeg">
+				</a>
+				<a href="assets/images/wildlife/wildlife7.jpeg" data-lightbox="mygallery" data-title="Sample 7 of Wildlife Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife7-small.jpeg">
+				</a>
+				<a href="assets/images/wildlife/wildlife8.jpeg" data-lightbox="mygallery" data-title="Sample 8 of Wildlife Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife8-small.jpeg">
+				</a>
+				<a href="assets/images/wildlife/wildlife9.jpeg" data-lightbox="mygallery" data-title="Sample 9 of Wildlife Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife9-small.jpeg">
+				</a>
+				<a href="assets/images/wildlife/wildlife10.jpeg" data-lightbox="mygallery" data-title="Sample 10 of Wildlifee Photography">
+					<img class="img-fluid" src="assets/images/wildlife/wildlife10-small.jpeg">
+				</a>				
+			</div> <!-- end of macro gallery -->
 
 		<footer class="footer bg-dark">
-			<p class="text-center mb-0 p-3">Rey Philip Pandi | Tuitt Coding Bootcamp </p>
+			<div class="row">
+				<div class="col-12 col-md-4 offset-md-3">
+					<p class="text-center mb-0 p-3">Rey Philip Pandi | Tuitt Coding Bootcamp | 2018 </p>
+				</div>
+
+				<div class="col-8 col-md-3 text-right">
+					<div class="contact">
+						<a href="https://github.com/pandirey" target="_blank">
+							<img class="img-fluid" src="assets/images/github-white.png" alt="social-github">
+						</a>
+
+						<a href="https://gitlab.com/pandirey" target="_blank">
+							<img class="img-fluid" src="assets/images/gitlab.png" alt="social-gitlab">
+						</a>
+						<a href="mailto:pandi.reyphilip@gmail.com" target="_blank">
+							<img class="img-fluid" src="assets/images/gmail.png" alt="social-gmail">
+						</a>
+
+						<a href="https://www.facebook.com" target="_blank">
+							<img class="img-fluid" src="assets/images/fb.png" alt="social-facebook">
+						</a>
+					</div>
+				</div>
+			</div>
 		</footer>
 
 
@@ -192,6 +339,8 @@
 
 
 	<!-- Optional JavaScript -->
+	<script type="text/javascript" src="assets/js/lightbox-plus-jquery.min.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
 
