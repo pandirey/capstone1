@@ -140,6 +140,8 @@ a h3:hover {
 }
 
 
+
+
 /*end home page*/
 
 
@@ -159,10 +161,6 @@ a h3:hover {
   justify-content: center;
   align-items: center;
 }
-
-
-
-
 
 /*end gallery page*/
 
@@ -399,10 +397,22 @@ img[alt*="social"] {
 }
 
 
+
+
 /*End of Footer*/
 
+#back small {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 10;
+  color: #E0B431;
+  opacity: 50%;
+}
 
-
+.banner:hover ~ #back small {
+  z-index: -999;
+}
 
 
 
