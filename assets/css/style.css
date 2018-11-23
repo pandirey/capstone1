@@ -81,6 +81,14 @@ h1 {
 .jumbotron h1 {
   color: #E0B431;
 }
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #E0B431;
+    font-weight: bold;
+}
+
+
+
 /*end landing page*/
 
 /*home page*/
@@ -127,7 +135,7 @@ h1 {
 }
 
 #home-card {
-  background-color: #212121;
+  background-color: transparent;
   border: 2px solid #FFFFFF;
 }
 
@@ -210,16 +218,17 @@ form {
 .faq-nav {
     flex-direction: column;
     margin: 0 0 32px;
-    border-radius: 2px;    
-    border: 2px solid #f9f9f9;
+    border-radius: 5px;    
+    border: 1px solid #f9f9f9;
     box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+
     
     .nav-link {
         position: relative;
         display: block;
         margin: 0;
         padding: 13px 16px;
-        background-color: #fff;
+        background-color: red;
         border: 0;
         border-bottom: 1px solid #ddd;
         border-radius: 0;
@@ -232,7 +241,7 @@ form {
         }
         
         &.active {
-            background-color: #f6f6f6;
+            background-color: red;
             font-weight: 700;
             color: rgba(0,0,0,.87);        
         }
@@ -321,7 +330,7 @@ BORDER FIX
 #faqs-card {
   border: 1px solid #f9f9f9;
   border-radius: 5px;
-  background-color: #212121;
+  background-color: transparent;
 }
 
 #faqs-btn {
@@ -339,10 +348,20 @@ BORDER FIX
   color: rgba(0,0,0,.87);
   text-align: left;
   white-space: normal;
-  color: red;
+  
 }
 
+#faqs-p {
+  /*color: #E0B431;*/
+  background-color: transparent;
+  margin: 0;
+  /*padding: 0;*/
+}
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #f9f9f9;
+    background-color: #E0B431;
+}
 
 
 /*end of faqs page*/
@@ -392,7 +411,6 @@ img[alt*="social"] {
   width: 25px;
   height: 25px;
   display: block;
-  /*border: 1px solid white;*/
   border-radius: 20%;
   margin-right: 10px;
   margin-top: 15px;
@@ -402,7 +420,6 @@ img[alt*="social"] {
 .contact {
   float: right;
 }
-
 
 
 
